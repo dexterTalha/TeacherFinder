@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splaxe"
+    tools:context=".LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:padding="15dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp">
+
+
+        <ImageView
+            android:id="@+id/imgView_logo"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_icon_splash" />
+
+
+        <RelativeLayout
+            android:id="@+id/rellay1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgView_logo"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/tv_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="Login"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+
+            <LinearLayout
+                android:id="@+id/linlay1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_login"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/etUsernameLayout"
+                        android:layout_width="match_parent"
+                        android:hint="Username/Email"
+                        app:hintAnimationEnabled="true"
+                        app:hintEnabled="true"
+                        app:hintTextAppearance="@style/mytext"
+                        android:textColorHint="#bababa"
+                        android:layout_height="60dp"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="5dp"
+                        android:paddingBottom="5dp"
+                        app:errorEnabled="true"
+                        >
+
+                        <EditText
+                            android:id="@+id/ed_username"
+                            style="@style/editText"
+                            android:layout_width="match_parent"
+                            android:textColor="@color/white"
+                            android:drawableEnd="@drawable/ic_email"
+                            android:paddingEnd="8dp"
+                            android:paddingStart="8dp"
+                            android:layout_height="match_parent"
+                            android:backgroundTint="@android:color/white"
+                            android:imeOptions="actionNext"
+                            android:inputType="text"
+                            tools:targetApi="lollipop" />
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/etPasswordLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="5dp"
+                        android:paddingBottom="5dp"
+                        app:hintTextAppearance="@style/mytext"
+                        app:hintEnabled="true"
+                        app:hintAnimationEnabled="true"
+                        android:hint="Password"
+                        android:textColorHint="#bababa"
+                        app:passwordToggleEnabled="true"
+                        app:passwordToggleDrawable="@drawable/ic_eye"
+                        app:passwordToggleTint="@color/white"
+                        app:errorEnabled="true"
+                        >
+
+                        <EditText
+                            android:backgroundTint="@android:color/white"
+                            android:textColor="@color/white"
+                            android:id="@+id/ed_password"
+                            android:layout_width="match_parent"
+                            android:paddingStart="8dp"
+                            android:paddingEnd="0dp"
+                            android:layout_height="match_parent"
+                            android:imeOptions="actionDone"
+                            android:inputType="textPassword"
+                            tools:targetApi="lollipop" />
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/linlay1"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/btn_border"
+                android:layout_marginTop="50dp"
+                android:fontFamily="sans-serif-medium"
+                android:paddingLeft="70dp"
+                android:paddingRight="70dp"
+                android:text="Login Now"
+                android:textColorHighlight="#ffffff"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

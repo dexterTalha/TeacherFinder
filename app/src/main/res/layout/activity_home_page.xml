@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="#ffffff"
+    tools:context=".HomePage">
+
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:animateLayoutChanges="true"
+        android:id="@+id/card_home"
+        android:layout_width="match_parent"
+        card_view:cardElevation="8dp"
+        android:background="@android:color/transparent"
+        android:layout_height="?actionBarSize">
+        <include
+            layout="@layout/toolbar_layout_home"/>
+    </android.support.v7.widget.CardView>
+
+        <FrameLayout
+            android:id="@+id/frag_main"
+            android:animateLayoutChanges="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:animateLayoutChanges="true"
+        android:id="@+id/card_bottom"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        card_view:cardElevation="8dp"
+        android:background="@android:color/transparent"
+        android:layout_height="?actionBarSize">
+
+        <android.support.design.widget.BottomNavigationView
+            android:id="@+id/bottomBar"
+            android:elevation="10dp"
+            android:layout_gravity="bottom"
+            app:menu="@menu/bottom_menu"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            tools:targetApi="lollipop" />
+
+    </android.support.v7.widget.CardView>
+
+
+
+</android.support.design.widget.CoordinatorLayout>

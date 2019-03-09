@@ -1,0 +1,21 @@
+<tabs>
+    <tab
+        id="@+id/tab_home"
+        icon="@drawable/ic_home"
+        inActiveColor="#4De9e9e9"
+        activeColor="#118df0"/>
+
+    <tab
+        id="@+id/tab_message"
+        icon="@drawable/ic_message_square"
+        inActiveColor="#4De9e9e9"
+        activeColor="#118df0"/>
+
+    <tab
+        id="@+id/tab_profile"
+        icon="@drawable/ic_user"
+        inActiveColor="#4De9e9e9"
+        activeColor="#118df0"/>
+
+
+</tabs>

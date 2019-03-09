@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#fcfcfc"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    tools:context=".CategorySelectActivity">
+
+    <LinearLayout
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_centerInParent="true"
+        android:animateLayoutChanges="true"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp">
+
+                <ImageView
+                    android:id="@+id/select_student"
+                    android:layout_width="wrap_content"
+                    android:layout_height="200dp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/student_icon_disabled" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/hero"
+                    android:gravity="center"
+                    android:text="I am a Student"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="250dp"
+                android:layout_weight="0.01"
+                android:background="#706c6c" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp">
+
+                <ImageView
+                    android:id="@+id/select_teacher"
+                    android:adjustViewBounds="true"
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="200dp"
+                    android:src="@drawable/teacher_icon_disabled" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/hero"
+                    android:gravity="center"
+                    android:text="I am a Teacher"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_layout_select"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:animateLayoutChanges="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_next_select"
+            android:background="@drawable/next_bottom_button"
+            android:visibility="visible"
+            android:text="NEXT"
+            android:textSize="25sp"
+            android:layout_alignParentBottom="true"
+            android:textColor="@color/white"
+            android:fontFamily="@font/hero"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+
+            />
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
